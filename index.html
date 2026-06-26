@@ -308,6 +308,13 @@
     .dl-note strong { display: block; margin-bottom: 5px; color: #5a4d22; }
     .dl-note p { margin: 0; }
     .dl-note em { font-style: normal; font-weight: 600; background: #f0e0b0; padding: 1px 5px; border-radius: 4px; }
+    .dl-platform { margin-bottom: 36px; }
+    .dl-platform-title { font-size: 17px; font-weight: 700; color: var(--dark); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 2px solid var(--bg); }
+    .dl-mobile-intro { font-size: 14px; color: var(--mid); margin-bottom: 14px; line-height: 1.5; }
+    .dl-btn-mobile { background: #e8f5e9; border-color: #c3e3c8; }
+    .dl-note-mobile { background: #eef6ff; border-color: #cfe3f7; color: #2f4f6b; }
+    .dl-note-mobile strong { color: #224a6b; }
+    .dl-note-mobile em { background: #cfe3f7; }
     .dl-box {
       background: var(--white); border-radius: var(--radius);
       padding: 32px; border: 1px solid rgba(15,110,86,0.1);
@@ -503,29 +510,51 @@
 <section class="download" id="download">
   <div class="dl-inner">
     <div class="dl-text">
-      <h2>Disponibil și ca aplicație desktop Windows</h2>
-      <p>Instalează FruitSync pe Windows pentru o experiență completă — funcționează și fără internet, perfect pentru lucrul pe teren.</p>
-      <div class="dl-btns">
-        <a href="https://github.com/comsitclaudiu-wq/FruitSync-Releases/releases/download/v1.4.0/FruitSync-Setup-1.4.0.exe" class="dl-btn">
-          <span class="dl-btn-icon">🪟</span>
-          <div>
-            <div class="dl-btn-label">Windows Installer</div>
-            <div class="dl-btn-name">FruitSync-Setup-1.4.0.exe</div>
-          </div>
-          <span class="dl-btn-arrow">→</span>
-        </a>
-        <a href="https://github.com/comsitclaudiu-wq/FruitSync-Releases/releases/download/v1.4.0/FruitSync-Portable-1.4.0.exe" class="dl-btn">
-          <span class="dl-btn-icon">💼</span>
-          <div>
-            <div class="dl-btn-label">Versiune portabilă · fără instalare</div>
-            <div class="dl-btn-name">FruitSync-Portable-1.4.0.exe</div>
-          </div>
-          <span class="dl-btn-arrow">→</span>
-        </a>
+      <h2>Folosește FruitSync pe orice dispozitiv</h2>
+      <p>Pe Windows ca aplicație desktop completă, sau direct pe telefon prin browser — funcționează oriunde.</p>
+
+      <div class="dl-platform">
+        <div class="dl-platform-title">🪟 Pentru Windows (PC / laptop)</div>
+        <div class="dl-btns">
+          <a href="https://github.com/comsitclaudiu-wq/FruitSync-Releases/releases/download/v1.4.0/FruitSync-Setup-1.4.0.exe" class="dl-btn">
+            <span class="dl-btn-icon">🪟</span>
+            <div>
+              <div class="dl-btn-label">Windows Installer</div>
+              <div class="dl-btn-name">FruitSync-Setup-1.4.0.exe</div>
+            </div>
+            <span class="dl-btn-arrow">→</span>
+          </a>
+          <a href="https://github.com/comsitclaudiu-wq/FruitSync-Releases/releases/download/v1.4.0/FruitSync-Portable-1.4.0.exe" class="dl-btn">
+            <span class="dl-btn-icon">💼</span>
+            <div>
+              <div class="dl-btn-label">Versiune portabilă · fără instalare</div>
+              <div class="dl-btn-name">FruitSync-Portable-1.4.0.exe</div>
+            </div>
+            <span class="dl-btn-arrow">→</span>
+          </a>
+        </div>
+        <div class="dl-note">
+          <strong>🛡️ Apare un avertisment Windows la instalare?</strong>
+          <p>Este normal. Windows afișează „aplicația nu este descărcată frecvent" pentru programele noi care nu au încă un certificat comercial. FruitSync este sigur. Pentru a continua: în fereastra de avertisment apasă <em>Mai multe informații</em> → <em>Rulează oricum</em> (sau <em>More info</em> → <em>Run anyway</em>).</p>
+        </div>
       </div>
-      <div class="dl-note">
-        <strong>🛡️ Apare un avertisment Windows la instalare?</strong>
-        <p>Este normal. Windows afișează „aplicația nu este descărcată frecvent" pentru programele noi care nu au încă un certificat comercial. FruitSync este sigur. Pentru a continua: în fereastra de avertisment apasă <em>Mai multe informații</em> → <em>Rulează oricum</em> (sau <em>More info</em> → <em>Run anyway</em>).</p>
+
+      <div class="dl-platform">
+        <div class="dl-platform-title">📱 Pe telefon (Android / iPhone)</div>
+        <p class="dl-mobile-intro">Pe telefon nu ai nevoie să descarci nimic — FruitSync rulează direct în browser. O poți adăuga pe ecranul principal ca să o folosești ca pe o aplicație obișnuită.</p>
+        <a href="https://app.fruitsync.ro" class="dl-btn dl-btn-mobile">
+          <span class="dl-btn-icon">📱</span>
+          <div>
+            <div class="dl-btn-label">Deschide aplicația web</div>
+            <div class="dl-btn-name">app.fruitsync.ro</div>
+          </div>
+          <span class="dl-btn-arrow">→</span>
+        </a>
+        <div class="dl-note dl-note-mobile">
+          <strong>📲 Cum o instalezi pe ecranul telefonului:</strong>
+          <p><strong>Android (Chrome):</strong> deschide app.fruitsync.ro → meniul ⋮ (sus dreapta) → „Adaugă la ecranul principal".<br>
+          <strong>iPhone (Safari):</strong> deschide app.fruitsync.ro → butonul Partajare → „Adaugă pe ecranul principal".</p>
+        </div>
       </div>
     </div>
     <div class="dl-box">
